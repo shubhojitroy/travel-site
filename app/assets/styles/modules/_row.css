@@ -1,0 +1,32 @@
+.row {
+  /* background-color: yellow; */
+  @mixin clearfix;
+
+  &--gutters {
+    margin-right: -5.3125rem;
+  }
+
+  &--gutters > div {
+    padding-right: 5.3125rem;
+  }
+
+  @mixin atMedium {
+    &__medium-4-col {
+      float: left;
+      width: 33.33%;
+    }
+
+    &__medium-4-col--larger {        
+        width: 37%;
+      }
+
+    &__medium-8-col {
+      float: left;
+      width: 66.66%;
+    }
+
+    &__medium-8-col--smaller {        
+        width: 63%;
+      }
+  }
+}

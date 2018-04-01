@@ -1,7 +1,10 @@
 .wrapper {
+  /* background-color: green; */
+  overflow: hidden;
+
   padding-left: 1.125rem;
   padding-right: 1.125rem;
-  max-width: 75rem;
+  max-width: 77.25rem;
   margin-left: auto;
   margin-right: auto;
 
@@ -12,5 +15,13 @@
   .wrapper {
     padding-left: 0;
     padding-right: 0;
+  }
+
+  &--b-margin {
+    margin-bottom: 1rem;
+
+    @mixin atSmall {
+      margin-bottom: 3.875rem;
+    }
   }
 }

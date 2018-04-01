@@ -1,7 +1,16 @@
 .wrapper {
-    padding-left: 1.125rem;
-    padding-right: 1.125rem;
-    max-width: 75rem;
-    margin-left: auto;
-    margin-right: auto;
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  &--medium {
+    max-width: 61rem;
+  }
+
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

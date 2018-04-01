@@ -10,7 +10,16 @@
     padding-right: 5.3125rem;
   }
 
+  &__b-margin-until-medium {
+    margin-bottom: 1rem;
+  }
+
   @mixin atMedium {
+
+    &__b-margin-until-medium {
+      margin-bottom: 0;
+    }
+
     &__medium-4-col {
       float: left;
       width: 33.33%;

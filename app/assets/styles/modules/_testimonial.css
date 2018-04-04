@@ -1,6 +1,16 @@
 .testimonial {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 0 1.8125rem 0.0625rem 1.8125rem;
+  padding: 0 1.125rem 0.0625rem 1.125rem;
+  margin-bottom: 6.125em;
+
+  @mixin atMedium {
+    padding: 0 1.8125rem 0.0625rem 1.8125rem;
+    margin-bottom: 0;
+  }
+
+  &--last {
+    margin-bottom: 0;
+  }
 
   &__photo {
     border-radius: 5rem;
@@ -26,6 +36,6 @@
     text-align: center;
     font-weight: 400;
     font-size: 0.9375rem;
-    margin: .25em 0 1em 0;
+    margin: 0.25em 0 1em 0;
   }
 }

@@ -2,6 +2,10 @@
   /* background-color: yellow; */
   @mixin clearfix;
 
+  &--t-padding {
+    padding-top: 5rem;
+  }
+
   &--gutters {
     margin-right: -5.3125rem;
   }
@@ -10,12 +14,20 @@
     margin-right: -6.25rem;
   }
 
+  &--gutters-small {
+    margin-right: -2.8125em;
+  }
+
   &--gutters > div {
     padding-right: 5.3125rem;
   }
 
   &--gutters-large > div {
     padding-right: 6.25rem;
+  }
+
+  &--gutters-small > div {
+    padding-right: 2.8125em;
   }
 
   &__b-margin-until-medium {
@@ -48,6 +60,18 @@
 
     &__medium-8-col--smaller {
       width: 63%;
+    }
+  }
+
+  /* begin equal height rules */
+  &--equal-height-at-medium {
+    @mixin atMedium {
+      display: flex;
+    }
+
+    & > div {
+      float: none;
+      display: flex;
     }
   }
 }

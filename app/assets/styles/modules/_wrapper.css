@@ -22,6 +22,16 @@
     }
   }
 
+  &--no-padding-until-large {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atLarge {
+      padding-left: 1.125rem;
+      padding-right: 1.125rem;
+    }
+  }
+
   .wrapper {
     padding-left: 0;
     padding-right: 0;

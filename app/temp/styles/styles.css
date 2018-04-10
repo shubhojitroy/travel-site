@@ -976,3 +976,51 @@ Instead edit gulp/templates/sprite */
       margin-right: 1.4rem
   }  
     }
+
+.site-header {
+  padding: 0.625rem 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba(47,85,114, 0.3);
+}
+
+.site-header__btn-container {
+    float: right;
+  }
+
+.site-header__logo {
+    position: absolute;
+    top: 0;
+    background-color: #2f5572;
+    padding: 1.5625rem 2.25rem;
+  }
+
+.primary-nav--pull-right {
+    float: right;
+  }
+
+.primary-nav ul {
+    margin: 0;
+    padding: 0;
+  }
+
+.primary-nav ul::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.primary-nav li {
+    list-style: none;
+    float: left;
+    padding-right: 1.25rem;
+  }
+
+.primary-nav a {
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    display: block;
+    padding: 0.75rem 0;
+  }
